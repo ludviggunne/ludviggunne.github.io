@@ -27,7 +27,6 @@ createEntry('ludviggunne.github.io', 'this website');
 
 window.addEventListener('scroll', function() {
     let scrollPos = window.scrollY;
-    let body = document.querySelector('body');
     let s = scrollPos / (document.documentElement.scrollHeight - window.innerHeight);
 
     let r0 = 35;

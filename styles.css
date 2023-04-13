@@ -1,6 +1,8 @@
 
 body { 
     font-family: 'Cutive Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
     background-color: rgb(35, 49, 49);
     color: blanchedalmond;
 }
