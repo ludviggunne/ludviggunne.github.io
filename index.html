@@ -13,64 +13,7 @@
             </div>
         </template>
 
-        <style>
-            body { 
-                font-family: 'Ubuntu Mono', monospace;
-                background-color: rgb(35, 49, 49);
-                color: blanchedalmond;
-            }
-
-            #grid-view {
-                max-width: 800px;
-                width: 100%;
-                display: grid;
-                grid-template-columns: 50% 50%;
-                column-gap: 10px;
-                row-gap: 200px;
-
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: auto;
-                margin: auto;
-
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-
-            #grid-view > div {
-                aspect-ratio: 1; 
-            }
-
-            .grid-view-entry-right > h1, p {
-                text-align: left;
-                padding: 0px;
-                margin: 0px;
-            }
-
-            .grid-view-entry-link {
-                text-decoration: underline;   
-                text-align: left;
-                margin: 0px;
-                color: inherit;
-            }
-
-            .grid-view-entry-image {
-                width: 100%;
-                aspect-ratio: 1;
-                object-fit: cover;
-                object-position: 0 0;
-                border: 1px solid;
-            }
-
-            #main-header {
-                font-size: 50px;
-                text-align: center;
-                padding-bottom: 80px;
-                padding-top: 50px;
-                margin: auto;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,32 +22,6 @@
     <body>
         <h1 id="main-header">ludvig gunne lindström</h1>
         <div id="grid-view"></div>
-        <script>
-            const template = document.getElementById("grid-view-entry-template");
-            
-            function createEntry(name, description) {
-
-                const newEntry    = template.content.cloneNode(true);
-                const entryImage  = newEntry.querySelector('.grid-view-entry-image');
-                const entryLink   = newEntry.querySelector('.grid-view-entry-link');
-                const entryText   = newEntry.querySelector('.grid-view-entry-text');
-                
-                entryImage.src          = `images/${name}.png`;
-                entryImage.alt          = `Screenshot of ${name}`;
-                entryLink.textContent   = name;
-                entryLink.href          = `https://github.com/ludviggunne/${name}`
-                entryText.textContent   = description;
-
-                document.getElementById('grid-view').appendChild(newEntry);
-            }
-
-            createEntry('mgrep', 'grep-like tool with nice colors');
-            createEntry('pyld', 'minimal build system for C projects written in Python');
-            createEntry('qualia', 'visualizing quaternion julia sets using compute shaders');
-            createEntry('raytracer', 'simple raytracer written in C');
-            createEntry('iksolver', 'stb-style single header library for inverse kinematics using FABRIK model');
-            createEntry('ludviggunne.github.io', 'this website');
-
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

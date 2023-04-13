@@ -1,0 +1,57 @@
+
+body { 
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: rgb(35, 49, 49);
+    color: blanchedalmond;
+}
+
+#grid-view {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 200px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    margin: auto;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#grid-view > div {
+    aspect-ratio: 1; 
+}
+
+.grid-view-entry-right > h1, p {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-view-entry-link {
+    text-decoration: underline;   
+    text-align: left;
+    margin: 0px;
+    color: inherit;
+}
+
+.grid-view-entry-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 0 0;
+    border: 1px solid;
+}
+
+#main-header {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    margin: auto;
+}
