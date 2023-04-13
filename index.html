@@ -97,9 +97,8 @@
                 
                 entryImage.src          = `images/${name}.png`;
                 entryImage.alt          = `Screenshot of ${name}`;
+                entryImage.href         = `https://github.com/ludviggunne/${name}`;
                 entryLink.textContent   = name;
-                entryLink.href          = `https://github.com/ludviggunne/${name}`
-                console.log(entryLink.href);
                 entryText.textContent   = description;
 
                 document.getElementById('grid-view').appendChild(newEntry);
@@ -108,6 +107,7 @@
             createEntry('mgrep', 'grep-like tool with nice colors');
             createEntry('pyld', 'minimal build system for C projects written in Python');
             createEntry('qualia', 'visualizing quaternion julia sets using compute shaders');
+            createEntry('ludviggunne.github.io', 'this website');
 
         </script>
     </body>
