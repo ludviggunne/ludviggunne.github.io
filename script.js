@@ -22,6 +22,7 @@ createEntry('pyld',                  'minimal build system for C projects writte
 createEntry('qualia',                'visualizing quaternion julia sets using compute shaders');
 createEntry('raytracer',             'simple raytracer written in C');
 createEntry('iksolver',              'stb-style single header library for inverse kinematics using FABRIK model');
+createEntry('visual_fields',         'tool for experimenting with visibility in architecture');
 createEntry('linden-tree',           'L-system implementation in Rust');
 createEntry('exprparse',             'single header C++ library for parsing math expressions');
 createEntry('ludviggunne.github.io', 'this website');
