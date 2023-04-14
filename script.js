@@ -17,17 +17,17 @@ function createEntry(name, description) {
     document.getElementById('grid-view').appendChild(newEntry);
 }
 
-createEntry('mgrep', 'grep-like tool with nice colors');
-createEntry('pyld', 'minimal build system for C projects written in Python');
-createEntry('qualia', 'visualizing quaternion julia sets using compute shaders');
-createEntry('raytracer', 'simple raytracer written in C');
-createEntry('iksolver', 'stb-style single header library for inverse kinematics using FABRIK model');
-createEntry('linden-tree', 'L-system implementation in Rust');
-createEntry('exprparse', 'single header C++ library for parsing math expressions');
+createEntry('mgrep',                 'grep-like tool with nice colors');
+createEntry('pyld',                  'minimal build system for C projects written in Python');
+createEntry('qualia',                'visualizing quaternion julia sets using compute shaders');
+createEntry('raytracer',             'simple raytracer written in C');
+createEntry('iksolver',              'stb-style single header library for inverse kinematics using FABRIK model');
+createEntry('linden-tree',           'L-system implementation in Rust');
+createEntry('exprparse',             'single header C++ library for parsing math expressions');
 createEntry('ludviggunne.github.io', 'this website');
 
-
 window.addEventListener('scroll', function() {
+
     let scrollPos = window.scrollY;
     let body = this.document.querySelector('body');
     let s = scrollPos / (document.documentElement.scrollHeight - window.innerHeight);
