@@ -19,6 +19,7 @@ function createEntry(name, description) {
 
 createEntry('mgrep',                 'grep-like tool with nice colors');
 createEntry('pyld',                  'minimal build system for C projects written in Python');
+createEntry('mprof',                 'lightweight, single header C++ library for collecting and emitting profiling data');
 createEntry('qualia',                'visualizing quaternion julia sets using compute shaders');
 createEntry('raytracer',             'simple raytracer written in C');
 createEntry('iksolver',              'stb-style single header library for inverse kinematics using FABRIK model');
